@@ -13,7 +13,7 @@
     <!-- header start -->
     <header>
         <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +25,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
+                    <a class="nav-link" href="#backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                   </li>
                   
                 </ul>
@@ -129,7 +129,7 @@
         </section>
 
         <!-- shoes section -->
-        <section class="container">
+        <section class="container" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -174,9 +174,9 @@
               </div>
         </section>
 
-        <!-- bagpack section -->
-        <section class="container my-5">
-            <h2>Bagpack</h2>
+        <!-- backpack section -->
+        <section class="container my-5" id="backpack">
+            <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                   <div class="card border-0 shadow-lg h-100">
@@ -221,7 +221,7 @@
         </section>
 
         <!-- subscribe start -->
-        <section class="container bg-secondary d-flex justify-content-center align-items-center rounded-3" style="height: 300px;">
+        <section class="container bg-secondary d-flex justify-content-center align-items-center rounded-3" style="height: 300px;" id="subscribe">
             <div class="">
                 <h1>LET'S STAY IN TOUCH</h1>
                 <p>Get updates on sales, specials and more</p>
@@ -232,8 +232,8 @@
     </main>
 
     <!-- footer start -->
-    <footer>
-
+    <footer class="mt-5 text-center">
+        <p><small>&copy2021. Panda Commerce. All rights reserved. Taki Kauser, Bangladesh.</small></p>
     </footer>
 
     <!-- script link -->
