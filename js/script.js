@@ -56,3 +56,14 @@ document.getElementById("confirmation-text").addEventListener("change", function
 document.getElementById("subscribe").addEventListener("dblclick", function(){
     document.getElementById("subscribe").style.backgroundColor = "tomato";
 });
+
+// buy now buttons onclick removal
+const removableButtons = document.getElementsByClassName("panda-btn-buy-now");
+for (const button of removableButtons){
+    button.addEventListener("click", function(event){
+        // console.log(event.target);
+        
+        event.target.parentNode.removeChild(event.target);
+        // event.target.style.display = "none";
+    });
+}
