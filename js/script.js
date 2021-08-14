@@ -21,3 +21,8 @@ for (const card of cards){
     // console.log(card);
     card.style.borderRadius = "30px";
 }
+
+// button click event handler
+document.getElementById("confirmation-btn").addEventListener("click", function(){
+    document.body.style.backgroundColor = "tomato";
+});
