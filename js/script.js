@@ -13,3 +13,11 @@ for (const itemContainer of itemsContainer){
     // console.log(itemContainer);
     itemContainer.style.backgroundColor = "grey";
 }
+
+// card items borderradius changed to 30px
+const cards = document.getElementsByClassName("card");
+
+for (const card of cards){
+    // console.log(card);
+    card.style.borderRadius = "30px";
+}
