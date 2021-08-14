@@ -26,3 +26,28 @@ for (const card of cards){
 document.getElementById("confirmation-btn").addEventListener("click", function(){
     document.body.style.backgroundColor = "tomato";
 });
+
+// confirmation button and text
+
+// after typing "Email" in textarea, SUBMIT button is enabled and change the bg when it is clicked as button click event handler set-up
+
+// keyup
+document.getElementById("confirmation-text").addEventListener("keyup", function(event){
+    // const confirmationText = document.getElementById("confirmation-text");
+    // console.log(confirmationText.value);
+
+    // console.log(event.target.value);
+    const confirmationButton = document.getElementById("confirmation-btn");
+    if((event.target.value) == "Email"){
+        confirmationButton.removeAttribute("disabled");
+    }
+    else{
+        confirmationButton.setAttribute("disabled", true);
+    }
+});
+
+// change
+document.getElementById("confirmation-text").addEventListener("change", function(){
+    const confirmationText = document.getElementById("confirmation-text");
+    console.log(confirmationText.value);
+});
