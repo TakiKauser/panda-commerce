@@ -51,3 +51,8 @@ document.getElementById("confirmation-text").addEventListener("change", function
     const confirmationText = document.getElementById("confirmation-text");
     console.log(confirmationText.value);
 });
+
+// subscribe double click bg change
+document.getElementById("subscribe").addEventListener("dblclick", function(){
+    document.getElementById("subscribe").style.backgroundColor = "tomato";
+});
